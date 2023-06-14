@@ -347,6 +347,13 @@ button {
   padding: 100px 0;
 }
 
+.container-form {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
 .section-sm {
   padding: 70px 0;
 }
