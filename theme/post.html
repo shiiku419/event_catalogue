@@ -79,28 +79,44 @@
   </header>
 
   <div class="post-btn-area">
+    <h2 class="form-title">Post Event</h2>
     <button type="submit" class="btn btn-primary font-weight-bold mt-3">投稿</button>
   </div>
 
-  <section class="login py-5 border-top-1">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-8 align-item-center">
-          <div class="border border">
-            <h3 class="bg-gray p-4">新規登録</h3>
-            <form action="#">
-              <fieldset class="p-4">
-                <input class="form-control mb-3" type="text" placeholder="User name" required>
-                <input class="form-control mb-3" type="email" placeholder="E-mail" required>
-                <input class="form-control mb-3" type="password" placeholder="Password" required>
-                <input class="form-control mb-3" type="password" placeholder="Confirm Password" required>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <form class="form-area">
+    <label for="event-name">イベント名</label><input type="text" name="event-name"><br>
+    <label for="event-name-kana">イベント名(カナ)</label><input type="text" name="event-name-kana"><br>
+    <label for="event-name-eng">イベント名(英語)</label><input type="text" name="event-name-eng"><br>
+    <label for="event-start-date">開始日</label><input type="text" name="event-start-date"><br>
+    <label for="event-end-date">終了日</label><input type="text" name="event-end-date"><br>
+    <label for="event-start-time">開始時間</label><input type="text" name="event-name"><br>
+    <label for="event-end-time">終了時間</label><input type="text" name="event-name"><br>
+    <label for="event-info">イベント概要</label><input type="text" name="event-info"><br>
+    <label for="prefecture">都道府県名</label><input type="text" name="prefecture"><br>
+    <label for="town">市区町村名</label><input type="text" name="town"><br>
+    <label for="place">場所名称</label><input type="text" name="place"><br>
+    <label for="address">住所</label><input type="text" name="address"><br>
+    <label for="address-detail">方書</label><input type="text" name="address-detail"><br>
+    <label for="latitude">緯度</label><input type="text" name="latitude"><br>
+    <label for="longitude">経度</label><input type="text" name="longitude"><br>
+    <label for="how-to-access">アクセス方法</label><input type="text" name="how-to-access"><br>
+    <label for="parking-info">駐車場情報</label><input type="text" name="parking-info"><br>
+    <label for="price(basic)">料金(基本)</label><input type="text" name="price(basic)"><br>
+    <label for="price(detail)">料金(詳細)</label><input type="text" name="price(detail)"><br>
+    <label for="contact-name">連絡先名称</label><input type="text" name="contact-name"><br>
+    <label for="contact-tel">連絡先電話番号</label><input type="text" name="contact-tel"><br>
+    <label for="organizer">主催者</label><input type="text" name="organizer"><br>
+    <label for="capacity">定員</label><input type="text" name="capacity"><br>
+    <label for="apply-end-date">参加申込終了日</label><input type="text" name="apply-end-date"><br>
+    <label for="apply-end-time">参加申込終了時間</label><input type="text" name="apply-end-time"><br>
+    <label for="how-to-apply">参加申込方法</label><input type="text" name="how-to-apply"><br>
+    <label for="url">URL</label><input type="text" name="url"><br>
+    <label for="remarks">備考</label><input type="text" name="remarks"><br>
+    <label for="category">カテゴリー</label><input type="text" name="category" value="プルダウンの方が良さげ"><br>
+    <label for="ward">区</label><input type="text" name="ward"><br>
+    <label for="disclosure-date">公開日</label><input type="text" name="disclosure-date"><br>
+    <label for="update-date">更新日</label><input type="text" name="update-date"><br>
+  </form>
 
   <!-- 
 Essential Scripts

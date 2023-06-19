@@ -69,6 +69,11 @@ label {
   font-size: 16px;
 }
 
+header {
+  background-color: #f2f2f2;
+}
+
+
 @media (max-width: 480px) {
   .nav-pills .nav-link {
     font-size: 12px;
@@ -325,6 +330,13 @@ textarea.form-control {
 
 .margin-0 {
   margin: 0 !important;
+}
+
+.form-title {
+  color: #7F7F7F;
+  font-size: 32px;
+  margin-left: 7vw;
+  padding-bottom: 4vh;
 }
 
 button {
