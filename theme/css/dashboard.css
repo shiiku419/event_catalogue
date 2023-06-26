@@ -8,10 +8,6 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
 
-.input-form {
-  display: flex;
-}
-
 body {
   line-height: 1.5;
   font-family: "Muli", sans-serif;
@@ -267,17 +263,24 @@ a:hover {
   color: #5672f9;
 }
 
+.input-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .form-name {
   text-align: left;
 }
 
 .update-form {
-  background-color: #d6edf5;
+  margin: 0.5vw;
+  width: 15vw;
+  margin-bottom: 2vw;
 }
 
 .form-control {
   border-radius: 2px;
-  height: 10px;
   background-color: transparent;
   color: #666;
   box-shadow: none;

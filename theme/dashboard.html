@@ -117,13 +117,23 @@
                   <div class="modal-body text-center input-form">
                     <div class="update-form">
                       <div class="form-name">名前</div>
-                      <textarea class="form-control" name="message" id="" cols="40" rows="4"
-                        class="w-100 rounded"></textarea>
+                      <input class="form-control" name="message" id="" cols="40" rows="4"
+                        class="w-100 rounded" placeholder="イベント 太郎">
                     </div>
                     <div class="update-form">
                       <div class="form-name">メールアドレス</div>
-                      <textarea class="form-control" name="message" id="" cols="40" rows="4"
-                        class="w-100 rounded"></textarea>
+                      <input class="form-control" name="message" id="" cols="40" rows="4"
+                        class="w-100 rounded" placeholder="tarou@event.mail">
+                    </div>
+                    <div class="update-form">
+                      <div class="form-name">パスワード</div>
+                      <input type="password" class="form-control" name="message" id="" cols="40" rows="4"
+                        class="w-100 rounded" placeholder="半角英数で入力">
+                    </div>
+                    <div class="update-form">
+                      <div class="form-name">パスワード(確認)</div>
+                      <input type="password" class="form-control" name="message" id="" cols="40" rows="4"
+                        class="w-100 rounded" placeholder="再入力してください">
                     </div>
                 </div>
                   <div class="modal-footer border-top-0 mb-3 mx-5 justify-content-center">
@@ -144,10 +154,10 @@
             <table class="table table-responsive product-dashboard-table">
               <thead>
                 <tr>
-                  <th>Image</th>
-                  <th>Product Title</th>
-                  <th class="text-center">Category</th>
-                  <th class="text-center">Action</th>
+                  <th>写真</th>
+                  <th>イベント名</th>
+                  <th class="text-center">カテゴリー</th>
+                  <th class="text-center">編集</th>
                 </tr>
               </thead>
               <tbody>
@@ -357,7 +367,7 @@
     </div>
   </footer>
 
-  <!-- 
+  <!--
 Essential Scripts
 =====================================-->
   <script src="plugins/jquery/jquery.min.js"></script>
