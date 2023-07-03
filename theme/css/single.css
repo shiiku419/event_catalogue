@@ -8,10 +8,6 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
 
-.tablist {
-  width: 50vw;
-}
-
 body {
   line-height: 1.5;
   font-family: "Muli", sans-serif;
@@ -37,10 +33,6 @@ h6 {
   font-family: "Muli", sans-serif;
   font-weight: 600;
   color: #333;
-}
-
-h6 {
-  text-align: center;
 }
 
 p {
@@ -267,24 +259,9 @@ a:hover {
   color: #5672f9;
 }
 
-.input-form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.form-name {
-  text-align: left;
-}
-
-.update-form {
-  margin: 0.5vw;
-  width: 15vw;
-  margin-bottom: 2vw;
-}
-
 .form-control {
   border-radius: 2px;
+  height: 50px;
   background-color: transparent;
   color: #666;
   box-shadow: none;
@@ -299,8 +276,7 @@ a:hover {
 }
 
 textarea.form-control {
-
-  height: 5vh;
+  padding: 20px;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -368,7 +344,8 @@ button {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 5vh 0;
+  padding-bottom: 0px;
 }
 
 .section-sm {
@@ -430,7 +407,7 @@ button {
 
 .overly:before {
   content: "";
-  background: rgba(0, 0, 0, 0.51);
+  /* background: rgba(0, 0, 0, 0.51); */
   position: absolute;
   top: 0;
   left: 0;
@@ -651,7 +628,7 @@ ul.pagination .active a {
 }
 
 .page-search {
-  background: #5672f9;
+  /* background: #5672f9; */
   padding: 30px 0;
 }
 
@@ -981,9 +958,9 @@ ul.pagination .active a {
   }
 }
 
-.hero-area {
+/* .hero-area {
   padding: 100px 0 0;
-}
+} */
 
 .hero-area .content-block {
   padding-bottom: 80px;
@@ -1666,7 +1643,8 @@ ul.pagination .active a {
 }
 
 .product-slider {
-  padding: 40px 0;
+  padding: 4.5vh 0;
+  padding-top: 1vh;
 }
 
 .product-slider .carousel-indicators li {
@@ -2710,3 +2688,10 @@ form textarea {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#map {
+  height: 400px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
