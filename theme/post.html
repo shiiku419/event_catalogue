@@ -84,38 +84,85 @@
   </div>
 
   <form class="form-area">
-    <label for="event-name">イベント名</label><input type="text" name="event-name"><br>
-    <label for="event-name-kana">イベント名(カナ)</label><input type="text" name="event-name-kana"><br>
-    <label for="event-name-eng">イベント名(英語)</label><input type="text" name="event-name-eng"><br>
-    <label for="event-start-date">開始日</label><input type="text" name="event-start-date"><br>
-    <label for="event-end-date">終了日</label><input type="text" name="event-end-date"><br>
-    <label for="event-start-time">開始時間</label><input type="text" name="event-name"><br>
-    <label for="event-end-time">終了時間</label><input type="text" name="event-name"><br>
-    <label for="event-info">イベント概要</label><input type="text" name="event-info"><br>
-    <label for="prefecture">都道府県名</label><input type="text" name="prefecture"><br>
-    <label for="town">市区町村名</label><input type="text" name="town"><br>
-    <label for="place">場所名称</label><input type="text" name="place"><br>
-    <label for="address">住所</label><input type="text" name="address"><br>
-    <label for="address-detail">方書</label><input type="text" name="address-detail"><br>
-    <label for="latitude">緯度</label><input type="text" name="latitude"><br>
-    <label for="longitude">経度</label><input type="text" name="longitude"><br>
-    <label for="how-to-access">アクセス方法</label><input type="text" name="how-to-access"><br>
-    <label for="parking-info">駐車場情報</label><input type="text" name="parking-info"><br>
-    <label for="price(basic)">料金(基本)</label><input type="text" name="price(basic)"><br>
-    <label for="price(detail)">料金(詳細)</label><input type="text" name="price(detail)"><br>
-    <label for="contact-name">連絡先名称</label><input type="text" name="contact-name"><br>
-    <label for="contact-tel">連絡先電話番号</label><input type="text" name="contact-tel"><br>
-    <label for="organizer">主催者</label><input type="text" name="organizer"><br>
-    <label for="capacity">定員</label><input type="text" name="capacity"><br>
-    <label for="apply-end-date">参加申込終了日</label><input type="text" name="apply-end-date"><br>
-    <label for="apply-end-time">参加申込終了時間</label><input type="text" name="apply-end-time"><br>
-    <label for="how-to-apply">参加申込方法</label><input type="text" name="how-to-apply"><br>
-    <label for="url">URL</label><input type="text" name="url"><br>
-    <label for="remarks">備考</label><input type="text" name="remarks"><br>
-    <label for="category">カテゴリー</label><input type="text" name="category" value="プルダウンの方が良さげ"><br>
-    <label for="ward">区</label><input type="text" name="ward"><br>
-    <label for="disclosure-date">公開日</label><input type="text" name="disclosure-date"><br>
-    <label for="update-date">更新日</label><input type="text" name="update-date"><br>
+    <div class="f1">
+      <h3 class="form-item">イベント情報</h3>
+      <table>
+        <tr>
+          <th>イベント名：</th>
+          <td><input type="text" name="event-name"></td>
+        </tr>
+        <tr>
+          <th>イベント名(カナ)：</th>
+          <td><input type="text" name="event-name-kana"></td>
+        </tr>
+        <tr>
+          <th>イベント名(英語)：</th>
+          <td><input type="text" name="event-name-eng"></td>
+        </tr>
+        <tr>
+          <th>カテゴリー：</th>
+          <td><input type="text" name="category" value="プルダウンの方が良さげ"></td>
+        </tr>
+      </table>
+      <label for="event-name">イベント名：</label><input type="text" name="event-name"><br>
+      <label for="event-name-kana">イベント名(カナ)：</label><input type="text" name="event-name-kana"><br>
+      <label for="event-name-eng">イベント名(英語)：</label><input type="text" name="event-name-eng"><br>
+      <label for="category">カテゴリー：</label><input type="text" name="category" value="プルダウンの方が良さげ"><br>
+      <label for="capacity">定員</label><br><input type="text" name="capacity"><br>
+      <label for="url">URL</label><br><input type="url" name="url"><br>
+      <label for="apply-end-date">参加申込終了日</label><br><input type="date" name="apply-end-date"><br>
+      <label for="apply-end-time">参加申込終了時間</label><br><input type="time" name="apply-end-time"><br>
+      <label for="how-to-apply">参加申込方法</label><br><input type="text" name="how-to-apply"><br>
+      <label for="event-info">イベント概要</label><br><textarea name="event-info"></textarea><br>
+    </div>
+    <hr>
+
+    <div class="f1">
+      <h3 class="form-item">日程情報</h3>
+      <label for="event-start-date">開始日</label><br><input type="date" name="event-start-date"><br>
+      <label for="event-end-date">終了日</label><br><input type="date" name="event-end-date"><br>
+      <label for="event-start-time">開始時間</label><br><input type="time" name="event-name"><br>
+      <label for="event-end-time">終了時間</label><br><input type="time" name="event-name">
+    </div>
+    <hr>
+
+    <div class="f1">
+      <h3 class="form-item">住所情報</h3>
+      <label for="yubin">郵便番号</label><br><input type="text" name="yubin"><button>住所検索</button><br>
+      <label for="prefecture">都道府県名</label><br><input type="text" name="prefecture"><br>
+      <label for="town">市区町村名</label><br><input type="text" name="town"><br>
+      <label for="ward">区</label><br><input type="text" name="ward"><br>
+      <label for="place">場所名称</label><br><input type="text" name="place"><br>
+      <!-- <label for="address">住所</label><input type="text" name="address"> -->
+      <!-- <label for="address-detail">方書</label><input type="text" name="address-detail"> -->
+      <label for="latitude">緯度</label><br><input type="text" name="latitude"><br>
+      <label for="longitude">経度</label><br><input type="text" name="longitude"><br>
+      <label for="how-to-access">アクセス方法</label><br><input type="text" name="how-to-access"><br>
+      <label for="parking-info">駐車場情報</label><br><input type="text" name="parking-info">
+    </div>
+    <hr>
+
+    <div class="f1">
+      <h3 class="form-item">料金情報</h3>
+      <label for="price(basic)">料金(基本)</label><br><input type="text" name="price(basic)"><br>
+      <label for="price(detail)">料金(詳細)</label><br><input type="text" name="price(detail)"><br>
+    </div>
+    <hr>
+
+    <div class="f1">
+      <h3 class="form-item">主催者情報</h3>
+      <label for="organizer">主催者</label><br><input type="text" name="organizer"><br>
+      <label for="contact-name">連絡先名称</label><br><input type="text" name="contact-name"><br>
+      <label for="contact-tel">連絡先電話番号</label><br><input type="tel" name="contact-tel"><br>
+      <hr>
+    </div>
+
+    <div class="f1">
+      <h3>その他</h3>
+      <label for="disclosure-date">公開日</label><br><input type="time" name="disclosure-date"><br>
+      <label for="update-date">更新日</label><br><input type="time" name="update-date"><br>
+      <label for="remarks">備考</label><br><textarea type="text" name="remarks"></textarea><br>
+    </div>
   </form>
 
   <!-- 
