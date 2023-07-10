@@ -12,6 +12,15 @@
   width: 50vw;
 }
 
+.nav-item-tab {
+  padding: 4px;
+}
+
+.nav-link-tab {
+  padding: 1vw;
+  background-color: whitesmoke;
+}
+
 body {
   line-height: 1.5;
   font-family: "Muli", sans-serif;
