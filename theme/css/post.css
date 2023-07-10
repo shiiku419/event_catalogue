@@ -271,8 +271,9 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  transform: translate(0,-100%);
+  transform: translate(0, -100%);
 }
+
 .progressbar li {
   position: relative;
   list-style-type: none;
@@ -282,6 +283,7 @@ a:hover {
   color: #999999;
   font-weight: bold;
 }
+
 .progressbar li:before {
   display: block;
   width: 18px;
@@ -292,6 +294,7 @@ a:hover {
   border-radius: 50%;
   background-color: #F5F5F5;
 }
+
 .progressbar li:after {
   position: absolute;
   z-index: -1;
@@ -302,17 +305,21 @@ a:hover {
   content: '';
   background-color: #F5F5F5;
 }
+
 .progressbar li:first-child:after {
   content: none;
 }
+
 .progressbar li.active,
-.progressbar li.complete{
+.progressbar li.complete {
   color: #0070BD;
 }
+
 .progressbar li.active:before,
 .progressbar li.complete:before {
   background-color: #0070BD;
 }
+
 .progressbar li.active:after,
 .progressbar li.complete:after {
   background-color: #0070BD;
@@ -323,13 +330,13 @@ a:hover {
   /* position: absolute; */
   top: 0;
   left: 0;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
   margin-bottom: 5vh;
   transform: translate(50%, 0%);
   width: 50%;
 }
 
-.detail-form{
+.detail-form {
   transform: translate(23%);
 }
 
@@ -347,24 +354,24 @@ textarea {
   padding-top: 30px;
   margin-left: 10vw;
   margin-bottom: 15px;
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
   width: 27vw;
 }
 
 .form-item:before,
-.form-item:after{
+.form-item:after {
   position: absolute;
   width: 100%;
   bottom: 0;
   content: '';
 }
 
-.form-item:before{
+.form-item:before {
   border-bottom: 5px solid #46aadc;
 }
 
-.form-item:after{
+.form-item:after {
   border-bottom: 5px solid #323232;
 }
 
@@ -388,7 +395,7 @@ input {
   width: 22vw;
 }
 
-.address-search{
+.address-search {
   margin-left: 1.2vw;
   font-size: 17px;
 }
@@ -615,6 +622,43 @@ button {
   padding: 8px 23px;
   border-radius: 4px;
   margin: auto;
+}
+
+.next-btn {
+  position: absolute;
+  left: 80%;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+}
+
+.back-btn {
+  position: absolute;
+  left: 5%;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+}
+
+.submit-btn {
+  position: absolute;
+  left: 80%;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+  background-color: orange !important;
 }
 
 .btn-main,
