@@ -347,6 +347,13 @@ button {
   padding: 100px 0;
 }
 
+.container-form {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
 .section-sm {
   padding: 70px 0;
 }
@@ -456,12 +463,24 @@ button {
  * Button Styles
  *
  */
+
+.register-btn-area {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 90px;
+}
+
 .btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 8px 23px;
   border-radius: 4px;
+  margin: auto;
 }
 
 .btn-main,
@@ -666,6 +685,7 @@ ul.pagination .active a {
 
 .bg-gray {
   background: #F5F5F5;
+  text-align: center;
 }
 
 .bg-1 {

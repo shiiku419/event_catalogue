@@ -13,7 +13,7 @@
 
   <!-- ** Basic Page Needs ** -->
   <meta charset="utf-8">
-  <title>register page</title>
+  <title>post page</title>
 
   <!-- ** Mobile Specific Metas ** -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
   <link href="plugins/slick/slick-theme.css" rel="stylesheet">
   <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
 
-  <link href="css/register.css" rel="stylesheet">
+  <link href="css/post.css" rel="stylesheet">
 
 </head>
 
@@ -78,28 +78,39 @@
     </div>
   </header>
 
-  <section class="login py-5 border-top-1">
-    <div class="container container-form">
-      <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-8 align-item-center">
-          <div class="border border">
-            <h3 class="bg-gray p-4">新規登録</h3>
-            <form action="#">
-              <fieldset class="p-4">
-                <input class="form-control mb-3" type="text" placeholder="User name" required>
-                <input class="form-control mb-3" type="email" placeholder="E-mail" required>
-                <input class="form-control mb-3" type="password" placeholder="Password" required>
-                <input class="form-control mb-3" type="password" placeholder="Confirm Password" required>
-                <div class="register-btn-area">
-                  <button type="submit" class="btn btn-primary font-weight-bold mt-3">新規登録</button>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        </div>
+  <div class="post-btn-area">
+    <h2 class="form-title">Post Event</h2>
+  </div>
+
+  <ul id="progressbar" class="progressbar">
+    <li class="active">イベント情報</li>
+    <li class="">日程情報</li>
+    <li>住所情報</li>
+    <li>料金情報</li>
+    <li>主催者情報</li>
+    <li>その他</li>
+  </ul>
+
+  <form id="form-area" class="form-area">
+    <div class="f1">
+      <h3 class="form-item">イベント情報</h3>
+      <div class="detail-form">
+        <label for="event-name">イベント名</label><br><input type="text" name="event-name"><br>
+        <label for="event-name-kana">イベント名(カナ)</label><br><input type="text" name="event-name-kana"><br>
+        <label for="event-name-eng">イベント名(英語)</label><br><input type="text" name="event-name-eng"><br>
+        <label for="category">カテゴリー</label><br><input type="text" name="category" value="プルダウンの方が良さげ"><br>
+        <label for="capacity">定員</label><br><input type="text" name="capacity"><br>
+        <label for="url">URL</label><br><input type="url" name="url"><br>
+        <label for="how-to-apply">参加申込方法</label><br><input type="text" name="how-to-apply"><br>
+        <label for="apply-end-date">参加申込終了日</label><br><input type="date" name="apply-end-date"><br>
+        <label for="apply-end-time">参加申込終了時間</label><br><input type="time" name="apply-end-time"><br>
+        <label for="event-info">イベント概要</label><br><textarea name="event-info"></textarea><br>
       </div>
     </div>
-  </section>
+
+    <button class="next-btn btn-main font-weight-bold mt-3" onclick="moveTonextQ(1)">次へ</button>
+  </form>
+
 
   <!-- 
 Essential Scripts
@@ -117,6 +128,7 @@ Essential Scripts
   <script src="plugins/google-map/map.js" defer></script>
 
   <script src="js/script.js"></script>
+  <script src="js/post.js"></script>
 
 </body>
 
